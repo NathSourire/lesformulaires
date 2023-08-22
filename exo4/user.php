@@ -1,5 +1,7 @@
 <?php
+$firstname = isset($_POST['firstname']) ? $_POST['firstname'] : ' ';
 
+$lastname = isset($_POST['lastname']) ? $_POST['lastname'] : [' '];
 ?>
 
 <!DOCTYPE html>
@@ -11,29 +13,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/assets/css/style.css">
-    <title>PHP exo 3</title>
+    <title>PHP exo 4</title>
 </head>
 
 <body>
     <header class="container-fluid">
         <div class="row">
             <img class="imgLogo col-3" src="./public/assets/img/PHP-logo.png" alt="Logo PHP">
-            <h1 class="col-7">Exercice 3</h1>
-            <p>Avec le formulaire de l'exercice 1, afficher dans la page user.php les données du formulaire transmis.
+            <h1 class="col-7">Exercice 4</h1>
+            <p>Avec le formulaire de l'exercice 2, afficher dans la page user.php les données du formulaire transmises.
             </p>
         </div>
     </header>
     <main class="container-fluid">
-        <div class="row">
+    <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-            <a href="user.php?">Test</a>
-                <form method="post" action="user.php">
-                    <label for="nom">Nom</label>
-                    <input type="text" name="firstname" >
-                    <label for="prénom">Prénom</label>
-                    <input type="text" name="lastname" >
-                    <input type="submit" value="Envoie">
-                </form>
+            <p><?php echo $firstname. ' / '.$lastname; ?></p>
             </div>
         </div>
     </main>
