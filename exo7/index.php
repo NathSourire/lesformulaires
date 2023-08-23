@@ -35,6 +35,7 @@ $name = 'Nathalie';
                         <div class="row">
                             <label class="col-12" for="civilité">Civilité</label>
                             <select class="col-6 form-control" name="civility">
+                                <option disabled selected>Entrez un genre !</option>
                                 <option value="Mr">Mr</option>
                                 <option value="Mme">Mme</option>
                             </select>

@@ -44,6 +44,7 @@
                         <div class="row">
                             <label class="col-12" for="civilité">Civilité</label>
                             <select class="col-6 form-control" name="civility">
+                                <option disabled selected>Entrez un genre !</option>
                                 <option value="Mr">Mr</option>
                                 <option value="Mme">Mme</option>
                             </select>
@@ -63,7 +64,7 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
 
