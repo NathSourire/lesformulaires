@@ -28,20 +28,19 @@ $name = 'Nathalie';
         </div>
     </header>
     <main class="container-fluid">
-        <a href="index.php?">Test</a>
         <div class="results">
-            <form class="row justify-content-center" method="post" action="user.php">
+            <form class="row justify-content-center" method="post" action="index.php">
                 <div class="col-6">
                     <div class="row">
                         <label class="col-12" for="civilité">Civilité</label>
-                        <select class="civilityEl col-6 form-control" name="civility">
+                        <select class="col-6 form-control" name="civility">
                             <option value="Mr">Mr</option>
                             <option value="Mme">Mme</option>
                         </select>
                         <label class="col-12" for="nom">Nom</label>
-                        <input class="firstnameEl col-6 form-control" type="text" name="firstname">
+                        <input class="col-6 form-control" type="text" name="firstname">
                         <label class="col-12" for="prénom">Prénom</label>
-                        <input class="lastnameEl col-6 form-control" type="text" name="lastname">
+                        <input class="col-6 form-control" type="text" name="lastname">
                         <input class="col-6 w-100 my-2" type="submit" value="Envoie">
                     </div>
                 </div>

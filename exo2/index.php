@@ -26,7 +26,7 @@
     <main class="container-fluid">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-            <a href="user.php?">Test</a>
+            <a href="user.php">Test</a>
                 <form method="post" action="user.php">
                     <label for="nom">Nom</label>
                     <input type="text" name="firstname" >

@@ -26,10 +26,30 @@ $name = 'Nathalie';
     <main class="container-fluid">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <p>
-                    <?php
-                    ?>
-                </p>
+            <?php
+            if (isset($_POST['civility']) && isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['case'])){
+                echo strtoupper ('Civilite : ' .$_POST['civility'].'<br> Nom : '. $_POST['firstname']. '<br> Prenom : '. $_POST['lastname']. '<br> nom du fichier : '. $_POST['case']);
+            } else { ?>
+                <form class="row justify-content-center" method="post" action="index.php" enctype="multipart/form-data">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-12" for="civilité">Civilité</label>
+                            <select class="col-6 form-control" name="civility">
+                                <option value="Mr">Mr</option>
+                                <option value="Mme">Mme</option>
+                            </select>
+                            <label class="col-12" for="nom">Nom</label>
+                            <input class="firstnameEl col-6 form-control" type="text" name="firstname">
+                            <label class="col-12" for="prénom">Prénom</label>
+                            <input class="lastnameEl col-6 form-control" type="text" name="lastname">
+                            <label class="col-12" for="Envoie de fichier">Envoie de fichier</label>
+                            <input class="col-6 form-control" type="file" name="case">
+                            <input class="col-6 w-100 my-2" type="submit" value="Envoie">
+                        </div>
+                    </div>
+                </form>
+            <?php
+            } ?>
             </div>
         </div>
     </main>

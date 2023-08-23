@@ -26,12 +26,12 @@
     <main class="container-fluid">
         <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-            <a href="user.php?">Test</a>
+            <a href="user.php">Test</a>
                 <form method="post" action="user.php">
                     <label for="nom">Nom</label>
-                    <input type="text" name="firstname" >
+                    <input class="firstname" type="text" name="firstname" >
                     <label for="prénom">Prénom</label>
-                    <input type="text" name="lastname" >
+                    <input class="lastname" type="text" name="lastname" >
                     <input type="submit" value="Envoie">
                 </form>
             </div>
